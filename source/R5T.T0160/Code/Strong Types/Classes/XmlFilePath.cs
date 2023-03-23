@@ -10,7 +10,7 @@ namespace R5T.T0160
     /// File path containing XML format data.
     /// </summary>
     [StrongTypeMarker]
-    public class XmlFilePath : TypedString, IStrongTypeMarker
+    public class XmlFilePath : TypedString, IStrongTypeMarker, IXmlFilePath
     {
         public XmlFilePath(string value)
             : base(value)

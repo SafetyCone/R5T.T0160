@@ -1,7 +1,7 @@
 using System;
 
 using R5T.T0150;
-using R5T.T0151;
+using R5T.T0175;
 
 
 namespace R5T.T0160
@@ -10,11 +10,8 @@ namespace R5T.T0160
     /// File path for JSON format data.
     /// </summary>
     [StrongTypeMarker]
-    public class JsonFilePath : TypedString, IStrongTypeMarker
+    public interface IJsonFilePath : IStrongTypeMarker,
+        IFilePath
     {
-        public JsonFilePath(string value)
-            : base(value)
-        {
-        }
     }
 }

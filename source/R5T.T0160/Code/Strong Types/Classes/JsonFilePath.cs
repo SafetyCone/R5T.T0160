@@ -7,12 +7,12 @@ using R5T.T0151;
 namespace R5T.T0160
 {
     /// <summary>
-    /// File path containing text data.
+    /// File path for JSON format data.
     /// </summary>
     [StrongTypeMarker]
-    public class TextFilePath : TypedString, IStrongTypeMarker
+    public class JsonFilePath : TypedString, IStrongTypeMarker, IJsonFilePath
     {
-        public TextFilePath(string value)
+        public JsonFilePath(string value)
             : base(value)
         {
         }
